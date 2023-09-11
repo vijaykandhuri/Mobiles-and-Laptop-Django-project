@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 align="center">REDMI Mobiles</h1>
+{% for i in mylist2 %}
+          <div class="container" align="center">
+          <div class="gallery">
+              <a target="_blank" href="{{i.4}}">Mobile Name:<b class="text-primary">{{i.0}}</b><br>
+                <img src="{{i.3}}" alt="Cinque Terre" >
+              </a><br>
+              <i> price:<b>{{i.1}}</b> </i>
+              <i> rating:<b>{{i.2}}</b> </i>
+            </div>
+          </div>
+          {% endfor %}
+
+{% endblock content %}

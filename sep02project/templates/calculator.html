@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>Caluculator DJANGO</head>
+    <body>
+        <form method="post">{% csrf_token %}
+            <label for="FirstName">A:</label><br>
+            <input type="text" name="A"><br>
+            <label for="LastName">B:</label><br>
+            <input type="text" name="B"><br>
+            <label>Select opetaror</label>
+            <select name="opr">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option> 
+                <option value="/">/</option>
+                <option value="**">**</option>
+            </select>
+            <button type="submit">Caluculate</button>
+            <label>Output:</label><br>
+            <input type="text" value="{{c}}">
+        </form>
+    </body>
+</html>
+
+
+          <label for="FirstName">A:</label><br>
+            <input type="text" name="A"><br>
+            <label for="LastName">B:</label><br>
+            <input type="text" name="B"><br>
+            <label>Select opetaror</label>
+            <select name="opr">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="**">**</option>
+            </select>
+            <button type="submit">Caluculate</button>
+            <label>Output:</label><br>
+            <input type="text" name="b" value="Output">
+        </form>
+    </body>
+</html>
